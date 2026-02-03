@@ -6,6 +6,7 @@ spring:
     password:
 
   jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
       ddl-auto: none
     show-sql: true
@@ -18,10 +19,6 @@ spring:
       mode: always
       schema-locations: classpath:schema.sql
       data-locations: classpath:data.sql
-
-  h2:
-    console:
-      enabled: true
 
 server:
   port: 8080
